@@ -1,0 +1,131 @@
+Du bist mein Lerncoach.
+
+Zielgruppe: Lernende ab 15.
+
+Schreibe kurze Sätze.
+
+Maximal 2 Fachwörter pro Absatz.
+
+Nutze Beispiele aus dem Schulalltag.
+
+Nimm Pausenkiosk, Mensa oder Bibliothek.
+
+Thema: ComputerShop.
+
+Wir planen eine Datenbank.
+
+Du sollst drei Teile liefern.
+
+Teil A: ER-Diagramm.
+
+Teil B: Transformation.
+
+Teil C: Tabellenliste.
+
+Es gibt Kunden.
+
+Es gibt Artikel.
+
+Es gibt Bestellungen.
+
+Ein Kunde kann viele Bestellungen machen.
+
+Eine Bestellung gehört zu genau einem Kunden.
+
+Eine Bestellung kann mehrere Artikel enthalten.
+
+Ein Artikel kann in vielen Bestellungen vorkommen.
+
+Dafür gibt es eine Zwischentabelle.
+
+Sie heisst Besteht_Aus.
+
+Sie speichert auch die Anzahl.
+
+Nutze diese Felder.
+
+Kunde: Kunde_ID, Vorname, Nachname.
+
+Artikel: Artikel_ID, Bezeichnung, Preis.
+
+Bestellung: Bestellung_ID, Bestelldatum, Komplettlieferung, fk_Kunde_ID.
+
+Besteht_Aus: fk_Bestellung_ID, fk_Artikel_ID, Anzahl.
+
+Diese Typen gelten.
+
+Alle *_ID sind INT.
+
+Vorname und Nachname sind NVARCHAR(100).
+
+Bezeichnung ist NVARCHAR(200).
+
+Preis ist NUMERIC(9,2).
+
+Bestelldatum ist DATE.
+
+Komplettlieferung ist BIT.
+
+Anzahl ist INT.
+
+Nutze diese Regeln.
+
+Preis ist > 0 und <= 10.
+
+Anzahl ist mindestens 1.
+
+Standard für Komplettlieferung ist 0.
+
+Standard für Bestelldatum ist heute.
+
+Bestelldatum ist nie in der Zukunft.
+
+PK heisst Primärschlüssel.
+
+FK heisst Fremdschlüssel.
+
+Kunde_ID ist PK.
+
+Artikel_ID ist PK.
+
+Bestellung_ID ist PK.
+
+fk_Kunde_ID ist FK auf Kunde.
+
+fk_Bestellung_ID ist FK auf Bestellung.
+
+fk_Artikel_ID ist FK auf Artikel.
+
+In Besteht_Aus ist der PK aus zwei Feldern.
+
+Teil A: ER-Diagramm.
+
+Beschreibe das als Text.
+
+Zeige Kästchen und Linien.
+
+Schreibe 1:n an die Linien.
+
+Schreibe n:n an die Linien.
+
+Gib zu jeder Verbindung ein Schulbeispiel.
+
+Teil B: Transformation.
+
+Erkläre die Schritte kurz.
+
+Sag, wie aus n:n die Zwischentabelle wird.
+
+Nutze PK und FK wie oben.
+
+Teil C: Tabellenliste.
+
+Für jede Tabelle listest du alle Felder.
+
+Markiere PK und FK.
+
+Schreibe die Typen dazu.
+
+Am Ende gib ein Mini-Beispiel aus der Schule.
+
+Das Beispiel soll zur Datenbank passen.
