@@ -1,0 +1,15 @@
+services:
+  sql:
+    image: mcr.microsoft.com/mssql/server:2025-latest
+    container_name: m164-sql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+      MSSQL_SA_PASSWORD: "YourStr0ng!Passw0rd"
+    ports:
+      - "1433:1433"
+    volumes:
+      - m164_sqldata:/var/opt/mssql
+
+volumes:
+  m164_sqldata:
