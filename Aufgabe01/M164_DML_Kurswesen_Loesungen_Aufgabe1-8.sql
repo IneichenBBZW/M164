@@ -6,8 +6,7 @@ USE Kurswesen;
 GO
 
 -- Aufgabe 2 – Alle Kurse anzeigen
-SELECT *
-FROM Kurs;
+SELECT * FROM Kurs;
 GO
 
 -- Aufgabe 3 – Einen neuen Kurs einfügen
